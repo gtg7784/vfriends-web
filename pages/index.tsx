@@ -94,9 +94,9 @@ const IndexPage = ({ secondMember, thirdMember, firstAward, secondAward, portfol
 export async function getServerSideProps() {
   const secondMember = await axios.get(`${server}/api/member/2`)
   const thirdMember = await axios.get(`${server}/api/member/3`)
-  const firstAward = await axios.get(`${server}/api/award/2019`);
+  const firstAward = await axios.get(`${server}/api/award/2019`)
   const secondAward = await axios.get(`${server}/api/award/2020`)
-  const portfolio = await axios.get(`${server}/api/portfolio`);
+  const portfolio = await axios.get(`${server}/api/portfolio`)
 
   return { props: {
     secondMember: secondMember.data,

@@ -1,4 +1,3 @@
-import { User } from 'interfaces';
 import { NextApiRequest, NextApiResponse } from 'next'
 import { members } from 'utils/members'
 
@@ -6,7 +5,7 @@ const handler = (_req: NextApiRequest, res: NextApiResponse) => {
   try {
     const { grade } = _req.query;
 
-    const member: User[] = members[parseInt(grade as string)];
+    const member = members[parseInt(grade as string)];
 
     if (!Array.isArray(member)) {
       throw new Error(`Cannot find ${grade}th grade member data`)
