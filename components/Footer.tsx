@@ -22,17 +22,17 @@ const Footer = () => (
       </div>
     </div>
     <div>
-      <Link href="">
+      <Link href="https://sunrint.hs.kr">
         <div>
           <img src="/static/sunrin.svg" alt=""/>
         </div>
       </Link>
-      <Link href="">
+      <Link href="https://youtube.com/channel/UCCWE7p-Cz3eP_Qws7zFoG8w">
         <div>
           <img src="/static/youtube.svg" alt=""/>
         </div>
       </Link>
-      <Link href="">
+      <Link href="https://facebook.com/with.v.friends/">
         <div>
           <img src="/static/facebook.svg" alt=""/>
         </div>
