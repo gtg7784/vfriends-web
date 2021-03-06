@@ -1,0 +1,22 @@
+@import './variables.scss';
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url(https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css);
+
+* { font-family: 'NanumSquare', sans-serif; }
+
+html { margin: 0; }
+
+body { 
+  margin: 0;
+  background-color: $white;
+}
+
+h1 {
+  font-family: 'NanumSquareRound';
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 0.85px;
+  text-align: center;
+  color: $black;
+}

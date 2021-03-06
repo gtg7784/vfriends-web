@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+.member {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 38px;
+
+  & > div{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    & > h3 {
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0.39px;
+      color: $black;
+      margin: 0;
+    }
+
+    & > span {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.32px;
+      margin-left: 8px;
+      color: $brown-grey;
+    }
+  }
+
+  & > p {
+    font-size: 22px;
+    letter-spacing: 0.39px;
+    color: $black;
+    margin: 12px 0 0;
+  }
+}
