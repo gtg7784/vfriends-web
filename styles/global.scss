@@ -5,7 +5,10 @@
 
 * { font-family: 'NanumSquare', sans-serif; }
 
-html { margin: 0; }
+html {
+  margin: 0;
+  scroll-behavior: smooth;
+}
 
 body { 
   margin: 0;

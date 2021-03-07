@@ -36,7 +36,7 @@ const IndexPage = ({ secondMember, thirdMember, firstAward, secondAward, portfol
         <img src="/static/main-illust.svg" alt=""/>
       </div>
     </Section>
-    <Section>
+    <Section id="intro">
       <div className={styles.member}>
         <h1>부원들은 누가 있을까요?</h1>
         <div>
@@ -55,7 +55,7 @@ const IndexPage = ({ secondMember, thirdMember, firstAward, secondAward, portfol
         </div>
       </div>
     </Section>
-    <Section>
+    <Section id="award">
       <div className={styles.award}>
         <h1>2년 동안의 수상 실적이에요</h1>
         <div>
@@ -80,7 +80,7 @@ const IndexPage = ({ secondMember, thirdMember, firstAward, secondAward, portfol
         </Card>
       </div>
     </Section>
-    <Section>
+    <Section id="portfolio">
       <div className={styles.portfolio}>
         <h1>부원들의 포트폴리오에요!</h1>
         <div>
@@ -90,6 +90,8 @@ const IndexPage = ({ secondMember, thirdMember, firstAward, secondAward, portfol
     </Section>
   </Layout>
 )
+
+export default IndexPage
 
 export async function getServerSideProps() {
   const secondMember = await axios.get(`${server}/api/member/2`)
@@ -106,5 +108,3 @@ export async function getServerSideProps() {
     portfolio: portfolio.data
   }}
 }
-
-export default IndexPage

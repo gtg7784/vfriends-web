@@ -12,8 +12,10 @@ export type Award = {
 export type Artwork = {
   title: string
   type: string
-  thumbnail: string
+  artist: string
   description: string
+  image?: number[]
+  videoId?: string
   index?: number
 }
 

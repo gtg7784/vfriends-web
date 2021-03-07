@@ -7,11 +7,12 @@ const handler = (_req: NextApiRequest, res: NextApiResponse) => {
     
     const portfolio = portfolios[parseInt(id as string)];
 
-    if (!Array.isArray(portfolio)) {
-      throw new Error(`Cannot find ${id}th portfolio data`)
+    if ((typeof portfolio === "object" || typeof portfolio === 'function') && (portfolio !== null)) {
+      res.status(200).json(portfolio)
+      return;
     }
+    throw new Error(`Cannot find ${id}th portfolio data`)
 
-    res.status(200).json(portfolio)
   } catch (err) {
     res.status(500).json({ statusCode: 500, message: err.message })
   }
