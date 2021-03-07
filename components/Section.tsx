@@ -1,6 +1,6 @@
 import React, {CSSProperties, ReactNode} from 'react';
 import styles from 'styles/section.scss';
-import {isMobile} from 'utils'
+// import {isMobile} from 'utils'
 
 type Props = {
   children: ReactNode,
@@ -9,7 +9,7 @@ type Props = {
 }
 
 const Section = ({ children, style, id }: Props) => (
-  <section className={`${styles.section} ${isMobile() && styles.mobile}`} style={style} id={id}>
+  <section className={styles.section} style={style} id={id}>
     {children}
   </section>
 )
