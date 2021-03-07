@@ -1,6 +1,5 @@
 import {GetServerSideProps} from 'next'
 import { useRouter } from 'next/router'
-import Image from 'next/image'
 import axios from 'axios'
 import Layout from 'components/Layout'
 import Section from 'components/Section'
