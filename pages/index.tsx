@@ -8,7 +8,6 @@ import styles from 'styles/index.scss'
 import Portfolio from 'components/Portfolio'
 import { Artwork, Award, User } from 'interfaces'
 import { server } from 'config';
-import 'styles/global.scss'
 
 type Props = {
   secondMember: User[]

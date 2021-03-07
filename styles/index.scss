@@ -5,8 +5,9 @@
   height: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  margin-top: 210px;
   
   & > div {
     display: flex;
