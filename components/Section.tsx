@@ -1,6 +1,5 @@
 import React, {CSSProperties, ReactNode} from 'react';
 import styles from 'styles/section.scss';
-// import {isMobile} from 'utils'
 
 type Props = {
   children: ReactNode,
