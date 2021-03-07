@@ -1,5 +1,5 @@
 import {GetServerSideProps} from 'next'
-import YouTube from 'react-youtube';
+import YouTube, { Options } from 'react-youtube';
 import axios from 'axios'
 import Layout from 'components/Layout'
 import Section from 'components/Section'
@@ -13,7 +13,7 @@ type Props = {
 }
 
 const ArtworkPage = ({ data }: Props) => {
-  const opts = {
+  const opts: Options = {
     height: '390',
     width: '640',
     playerVars: {

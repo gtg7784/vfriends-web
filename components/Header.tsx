@@ -4,7 +4,7 @@ import styles from 'styles/header.scss'
 
 const Header = () => (
   <header className={styles.header}>
-    <Link href="">
+    <Link href="/">
       <img src="/static/logo-vfriends-yellow.svg" alt=""/>
     </Link>
     <ul>
